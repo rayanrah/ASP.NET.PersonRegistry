@@ -1,0 +1,34 @@
+﻿@model PersonalVM
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Personal Registry</h1>
+<br />
+
+<form asp-controller="personal" asp-action="ShowPersonal" method="post">
+
+    <label asp-for="@Model.Id"></label>
+    <input asp-for="@Model.Id">
+    <br />
+    <label asp-for="@Model.Name"></label>
+    <input asp-for="@Model.Name">
+    <br />
+    <label asp-for="@Model.Surname"></label>
+    <input asp-for="@Model.Surname">
+    <br />
+    <label asp-for="@Model.City"></label>
+    <input asp-for="@Model.City">
+    <br />
+    <label asp-for="@Model.Country"></label>
+    <input asp-for="@Model.Country">
+    <br />
+    <input type="submit" value="Send" class="custom-button" />
+
+
+
+
+
+
+</form>

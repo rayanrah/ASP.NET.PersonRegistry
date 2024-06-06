@@ -1,0 +1,28 @@
+﻿@model PersonalVM
+@{
+    ViewData["Title"] = "ShowPersonal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ShowPersonal</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Model.Name</td>
+            <td>@Model.Surname</td>
+            <td>@Model.City</td>
+            <td>@Model.Country</td>
+        </tr>
+    </tbody>
+</table>
